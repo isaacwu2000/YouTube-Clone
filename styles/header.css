@@ -1,0 +1,166 @@
+.header {
+    height: 60px;
+
+    background-color: white;
+    box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 100;
+}
+
+.left-section {
+    display: flex;
+}
+
+.hamburger-menu {
+    height: 28px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.youtube-logo {
+    height: 28px;
+}
+
+.middle-section {
+    display: flex;
+    margin-left: 70px;
+    flex-grow: 1;
+    flex-direction: row;
+    max-width: 50%;
+    height: 40px;
+    align-items: center;
+    vertical-align: top;
+}
+
+.search-bar-form {
+    display: flex;
+    flex: 1;
+    height: 40px;
+}
+
+.search-bar {
+    flex: 1;
+    flex-shrink: 1;
+    padding-left: 10px;
+    border: 0.5px solid gray;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.15);
+    width: 60px;
+}
+
+.search-bar::placeholder {
+    font-size: 16px;
+}
+
+.search-button, .voice-search-button, .upload, .apps, .notifications{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.search-button {
+    flex-shrink: 0;
+    height: 40px;
+    width: 70px;
+    border-width: 0.5px;
+    border-color: gray;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -2px;
+    margin-right: 10px;
+}
+
+#search-button-icon {
+    height: 30px;
+}
+
+.search-button .tooltip, .voice-search-button .tooltip, .upload .tooltip, .apps .tooltip, .notifications .tooltip {
+    position: absolute;
+    bottom: -40px;
+
+    background-color: gray;
+    color: white;
+
+    font-size: 12px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip, .voice-search-button:hover .tooltip, .upload:hover .tooltip, .apps:hover .tooltip, .notifications:hover .tooltip {
+    opacity: 1;
+}
+
+.voice-search-button {
+    flex-shrink: 0;
+    height: 40px;
+    width: 40px;
+    border-width: 0px;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+}
+
+#voice-search-button-icon {
+    flex: 1.2;
+}
+
+.right-section {
+    display: flex;
+    flex-shrink: 0;
+    margin-left: 90px;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.upload-icon, .youtube-apps-icon, .notifications-icon {
+    height: 28px;
+}
+
+.notifications {
+    position: relative;
+}
+
+.notifications-count {
+    position: absolute;
+    top: -1px;
+    right: -5px;
+
+    font-size: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 12px;
+
+    background-color: rgb(215, 0, 0);
+    color: white;
+}
+
+.user-profile-pic {
+    height: 32px;
+    border-radius: 16px;
+}
